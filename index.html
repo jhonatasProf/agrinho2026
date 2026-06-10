@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TerraViva - Dashboard de Carbono</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="logo">🌱 TerraViva</div>
+            <nav>
+                <a href="#" class="active">📊 Dashboard</a>
+                <a href="#">🗺️ Mapa Interativo</a>
+                <a href="#">💰 Créditos</a>
+                <a href="#">⚙️ Configurações</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header>
+                <div>
+                    <h1>Painel de Créditos de Carbono</h1>
+                    <p>Fazenda Horizonte Verde • Cascavel - PR</p>
+                </div>
+                <button class="btn-export">Exportar Relatório</button>
+            </header>
+
+            <section class="cards-grid">
+                <div class="card">
+                    <h3>Área Preservada</h3>
+                    <p class="value">120 <span class="unit">ha</span></p>
+                </div>
+                <div class="card">
+                    <h3>CO₂ Retido</h3>
+                    <p class="value">2.450 <span class="unit">Ton</span></p>
+                </div>
+                <div class="card highlight">
+                    <h3>Créditos Gerados</h3>
+                    <p class="value">2.450 <span class="unit">CBIO</span></p>
+                </div>
+                <div class="card profit">
+                    <h3>Lucro Estimado</h3>
+                    <p class="value">R$ 36.750</p>
+                </div>
+            </section>
+
+            <section class="chart-section">
+                <h2>Crescimento de Retenção de CO₂ (Últimos Anos)</h2>
+                <div class="chart-container">
+                    <canvas id="carbonChart"></canvas>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
