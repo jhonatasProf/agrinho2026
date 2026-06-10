@@ -50,6 +50,21 @@
 
             <section class="chart-section">
                 <h2>Crescimento de Retenção de CO₂ (Últimos Anos)</h2>
+                
+                <form id="carbon-form" style="display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 25px; align-items: flex-end;">
+                    <div style="display: flex; flex-direction: column; gap: 5px;">
+                        <label for="input-ano" style="font-size: 14px; color: #94a3b8;">Ano:</label>
+                        <input type="number" id="input-ano" placeholder="Ex: 2027" required style="background: #12141c; border: 1px solid #2d3142; padding: 10px; border-radius: 6px; color: white; width: 110px; font-size: 14px;">
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 5px;">
+                        <label for="input-co2" style="font-size: 14px; color: #94a3b8;">CO₂ Retido (Ton):</label>
+                        <input type="number" id="input-co2" placeholder="Ex: 2600" required style="background: #12141c; border: 1px solid #2d3142; padding: 10px; border-radius: 6px; color: white; width: 160px; font-size: 14px;">
+                    </div>
+                    <button type="submit" style="background-color: #4ade80; color: #12141c; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-weight: bold; height: 39px; transition: 0.3s;">
+                        Adicionar Dados
+                    </button>
+                </form>
+
                 <div class="chart-container">
                     <canvas id="carbonChart"></canvas>
                 </div>
